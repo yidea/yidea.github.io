@@ -175,16 +175,19 @@ header {
   .background-cover;
   text-align: center;
   color: white;
+
   .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+
     .intro-lead-in {
-      .serif-font;
-      font-style: italic;
-      font-size: 22px;
-      line-height: 22px;
-      margin-bottom: 25px;
+      font-family:  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 40px;
+      margin-bottom: 40px;
     }
+
     .intro-heading {
       .heading-font;
       font-weight: 700;
@@ -194,19 +197,18 @@ header {
     }
   }
 }
-
+// desktop
 @media (min-width: 768px) {
   header {
     .intro-text {
-      padding-top: 300px;
+      padding-top: 250px;
       padding-bottom: 200px;
+
       .intro-lead-in {
-        .serif-font;
-        font-style: italic;
-        font-size: 40px;
-        line-height: 40px;
-        margin-bottom: 25px;
+        font-size: 60px;
+        line-height: 70px;
       }
+
       .intro-heading {
         .heading-font;
         font-weight: 700;
@@ -745,9 +747,90 @@ body {
   webkit-tap-highlight-color: @theme-primary;
 }
 
+// typed.js
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 // Custom style
 .service-heading {
   font-size: 25px;
 }
 
+.btn-whatido {
+  text-shadow: 0px 1px 1px #333;
+}
+
+.js-typed {
+  font-weight: 400;
+  font-size: 45px;
+  line-height:50px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  border-bottom: 4px dotted #fec503;
+  transition: border-color .3s ease-in-out;
+}
+
+.typed-cursor {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#what-i-do {
+  padding-top: 20px;
+
+  .section-heading {
+    margin-top: 150px;
+  }
+
+  #particles {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+}
+
+#about {
+  .img-yi {
+    opacity: 0.9;
+  }
+}
