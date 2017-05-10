@@ -29,8 +29,8 @@
     }
   });
 
+  //TODO: start particle when view in
   // particlesJS.load("particles", "js/particle.json");
-
   particlesJS("particles", {
     particles: {
       number: {
@@ -143,10 +143,9 @@
   });
 
   // typed.js
-  // $(".js-typed").typed({
-  //   strings: ["Websites,", "UI prototypes,", "Web applications ..."],
-  //   typeSpeed: 50
-  // });
-
+  $(".js-typed").typed({
+    strings: ["Websites,", "UI prototypes,", "Web applications ..."],
+    typeSpeed: 50
+  });
 
 })(jQuery); // End of use strict
