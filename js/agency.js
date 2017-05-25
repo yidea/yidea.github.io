@@ -143,9 +143,11 @@
   });
 
   // typed.js
-  $(".js-typed").typed({
-    strings: ["Websites,", "UI prototypes,", "Web applications ..."],
-    typeSpeed: 50
-  });
+  setTimeout(function() {
+    $(".js-typed").typed({
+      strings: ["Websites,", "UI prototypes,", "Web applications ..."],
+      typeSpeed: 70
+    });
+  }, 2000);
 
 })(jQuery); // End of use strict
